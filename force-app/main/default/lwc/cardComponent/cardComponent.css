@@ -1,28 +1,61 @@
-.card {
-    border: 1px solid #d8dde6;
-    border-radius: 0.25rem;
-    padding: 1rem;
-    background: #ffffff;
-    max-width: 400px;
+/* GRID WRAPPER */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
 }
 
-.card-header {
+/* CARD */
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 28px 32px;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* ICON CONTAINER */
+.card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #edf7f4;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.card-header lightning-icon {
-    margin-right: 0.5rem;
+/* ICON */
+.card-icon lightning-icon {
+    --slds-c-icon-color-foreground-default: #0b5cab;
 }
 
-h1 {
-    font-size: 1.25rem;
+/* TITLE */
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b2a3f;
+    margin: 0 0 12px 0;
+}
+
+/* DESCRIPTION */
+.card-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #526b7a;
     margin: 0;
 }
 
-p {
-    font-size: 1rem;
-    color: #3e3e3c;
-    margin: 0;
+/* RESPONSIVE TWEAK */
+@media (max-width: 768px) {
+    .card {
+        padding: 24px;
+    }
 }

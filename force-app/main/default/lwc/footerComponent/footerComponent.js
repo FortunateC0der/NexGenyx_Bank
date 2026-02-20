@@ -1,6 +1,6 @@
 import { LightningElement } from 'lwc';
-import LOGO from '@salesforce/resourceUrl/NexGenyxBank_Logo';
+import LOGO from '@salesforce/resourceUrl/NextGenyxBank_Logo';
 
-export default class footerComponent extends LightningElement {
+export default class FooterComponent extends LightningElement {
     logoUrl = LOGO;
 }
