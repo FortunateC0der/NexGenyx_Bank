@@ -1,0 +1,73 @@
+<template>
+    <div class="register-form">
+        <lightning-input 
+            label="First Name" 
+            value={firstName} 
+            data-id="firstName"
+            onchange={handleInputChange} 
+            required>
+        </lightning-input>
+
+        <lightning-input 
+            label="Last Name" 
+            value={lastName} 
+            data-id="lastName"
+            onchange={handleInputChange} 
+            required>
+        </lightning-input>
+
+        <lightning-input 
+            label="Date of Birth" 
+            type="date" 
+            value={dob} 
+            data-id="dob"
+            onchange={handleInputChange} 
+            required>
+        </lightning-input>
+
+        <lightning-combobox
+            label="Gender"
+            options={genderOptions}
+            value={gender}
+            placeholder="Select Gender"
+            data-id="gender"
+            onchange={handleInputChange}
+            required>
+        </lightning-combobox>
+
+        <lightning-input 
+            label="PAN Number" 
+            value={panNumber} 
+            data-id="panNumber"
+            onchange={handleInputChange} 
+            required>
+        </lightning-input>
+
+        <lightning-input 
+            label="Mobile Number" 
+            type="tel" 
+            value={mobileNumber} 
+            data-id="mobileNumber"
+            onchange={handleInputChange} 
+            required>
+        </lightning-input>
+
+        <lightning-input 
+            label="Email Address" 
+            type="email" 
+            value={emailAddress} 
+            data-id="emailAddress"
+            onchange={handleInputChange} 
+            required>
+        </lightning-input>
+
+        <div class="button-container">
+            <lightning-button 
+                label="Apply" 
+                variant="brand" 
+                onclick={handleRegister}>
+            </lightning-button>
+        </div>
+        
+    </div>
+</template>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Type__c</fullName>
+    <description>Select the category of expense</description>
+    <label>Expense Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Housing / Rent</fullName>
+                <default>false</default>
+                <label>Housing / Rent</label>
+            </value>
+            <value>
+                <fullName>Home Loan EMI</fullName>
+                <default>false</default>
+                <label>Home Loan EMI</label>
+            </value>
+            <value>
+                <fullName>Vehicle Loan EMI</fullName>
+                <default>false</default>
+                <label>Vehicle Loan EMI</label>
+            </value>
+            <value>
+                <fullName>Personal Loan EMI</fullName>
+                <default>false</default>
+                <label>Personal Loan EMI</label>
+            </value>
+            <value>
+                <fullName>Credit Card Dues</fullName>
+                <default>false</default>
+                <label>Credit Card Dues</label>
+            </value>
+            <value>
+                <fullName>Utilities (Electricity, Water, Gas)</fullName>
+                <default>false</default>
+                <label>Utilities (Electricity, Water, Gas)</label>
+            </value>
+            <value>
+                <fullName>Internet &amp; Mobile</fullName>
+                <default>false</default>
+                <label>Internet &amp; Mobile</label>
+            </value>
+            <value>
+                <fullName>Insurance Premiums</fullName>
+                <default>false</default>
+                <label>Insurance Premiums</label>
+            </value>
+            <value>
+                <fullName>Education Expenses</fullName>
+                <default>false</default>
+                <label>Education Expenses</label>
+            </value>
+            <value>
+                <fullName>Medical Expenses</fullName>
+                <default>false</default>
+                <label>Medical Expenses</label>
+            </value>
+            <value>
+                <fullName>Household Expenses</fullName>
+                <default>false</default>
+                <label>Household Expenses</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

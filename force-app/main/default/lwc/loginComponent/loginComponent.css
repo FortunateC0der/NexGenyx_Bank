@@ -1,0 +1,55 @@
+.login {
+    width: 300px; /* narrower width */
+    margin: 100px auto 20px auto; /* top margin and bottom margin */
+    padding: 20px 20px 40px 20px;
+    border: 1px solid #d8dde6; /* thinner border */
+    border-radius: 4px; /* smaller radius */
+    box-shadow: none; /* no shadow */
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.login lightning-input {
+    margin-bottom: 15px; /* spacing between input fields */
+}
+
+.login lightning-button[label="Login"] {
+    width: 100%; /* full width */
+    background-color: #0070d2; /* Salesforce blue */
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login lightning-button[label="Login"]:hover {
+    background-color: #005fb2; /* darker blue on hover */
+}
+
+/* Hide the other buttons since they are not in the screenshot */
+.buttons,
+.login lightning-button[label="Forgot Password"],
+.login lightning-button[label="Not a Customer"] {
+    display: none;
+}
+
+.forgot-password-link {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #0070d2;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+}
+
+.employee-login-link {
+    text-align: center;
+    font-size: 13px;
+    color: #0070d2;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 20px;
+}

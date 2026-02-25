@@ -1,0 +1,12 @@
+<template>
+   <div class="login">
+    <lightning-input label="Username" value={username} onchange={handleChange}></lightning-input>
+    <lightning-input label="Password" type="password" value={password} onchange={handleChange}></lightning-input>
+
+    <lightning-button label="Login" onclick={handleLogin}></lightning-button>
+
+    <a class="forgot-password-link" onclick={handleForgot}>Forgot your password?</a>
+</div>
+
+<a class="employee-login-link" onclick={navigateRegister}>Are you an employee? Log in</a>
+</template>

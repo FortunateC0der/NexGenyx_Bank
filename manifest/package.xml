@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+ 
+    <!-- 1️⃣ Custom Objects (deploy first) -->
+    <types>
+        <members>Personal_Details__c</members>
+        <members>Employment_Details__c</members>
+        <members>Income_Details__c</members>
+        <members>Loan_Details__c</members>
+        <members>Expense_Details__c</members>
+        <name>CustomObject</name>
+    </types>
+ 
     <types>
         <members>*</members>
         <name>ApexClass</name>
     </types>
+ 
     <types>
         <members>*</members>
         <name>ApexComponent</name>
     </types>
+ 
     <types>
         <members>*</members>
         <name>ApexPage</name>
     </types>
+ 
     <types>
         <members>*</members>
         <name>ApexTestSuite</name>
     </types>
+ 
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
+ 
     <types>
         <members>*</members>
         <name>AuraDefinitionBundle</name>
@@ -28,9 +44,18 @@
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
+ 
+   
+<types>
+    <members>NexGenyx</members>  <!-- site name (exactly) -->
+    <name>CustomSite</name>
+</types>
+<!-- add SiteDotCom if it appears in source -->
+   
     <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
+ 
     <version>65.0</version>
 </Package>
